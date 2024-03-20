@@ -9,7 +9,6 @@ DELETE FROM `players` WHERE `players`.`id` = 5;
 DELETE FROM `players` WHERE `players`.`id` = 6;
 
 ALTER TABLE `accounts` ADD `page_access` int(11) NOT NULL DEFAULT 0;
-ALTER TABLE `accounts` MODIFY COLUMN `creation` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE `accounts` DROP INDEX `accounts_unique`;
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `email`, `page_access`, `premdays`, `lastday`, `type`, `coins`, `creation`, `recruiter`)

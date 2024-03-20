@@ -85,7 +85,7 @@ class Manage extends Base{
             }else{
                 $colorPrem = 'red';
             }
-            $created = date('d F Y, H:i', strtotime($account->creation));
+            $created = date('d F Y, H:i', $account->creation);
 
             $playersInAccount = EntityPlayer::getPlayer([ 'account_id' => $account->id]);
             while($playersAccount = $playersInAccount->fetchObject()){

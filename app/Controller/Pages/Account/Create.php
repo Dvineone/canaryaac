@@ -136,6 +136,7 @@ class Create extends Base{
             'premdays' => '0',
             'type' => '0',
             'coins' => '0',
+            'creation' => time(),
             'recruiter' => '0',
         ];
         $accountId = EntityCreateAccount::createAccount($account);
